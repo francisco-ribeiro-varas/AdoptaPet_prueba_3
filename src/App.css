@@ -170,6 +170,48 @@
   margin: 0 auto;
 }
 
+.mascotas-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.filtro-especie,
+.search-label {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: var(--text-h, #222);
+}
+
+.filtro-especie select,
+.search-label input {
+  min-width: 220px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border, #d1d5db);
+  background: var(--input-bg, #fff);
+  color: var(--text-h, #222);
+}
+
+.search-label input {
+  width: 100%;
+}
+
+.no-results {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  padding: 24px 16px;
+  border-radius: 16px;
+  background: rgba(255, 230, 230, 0.7);
+  border: 1px solid #f2c1c1;
+  color: #5f1a1a;
+}
+
 .section-header {
   text-align: center;
   margin-bottom: 24px;

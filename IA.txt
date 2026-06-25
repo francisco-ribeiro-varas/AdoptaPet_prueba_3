@@ -1,0 +1,4 @@
+etapa 1:
+me ayudas a importar el array en app.jsx y verificar en consola que carga(console.log) los datos los tengo en la carpeta data en el archivo Mascotas.js
+fue util para mostrar los datos en la consola 
+utilidad: util

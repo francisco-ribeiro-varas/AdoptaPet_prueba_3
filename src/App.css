@@ -156,29 +156,164 @@
 #spacer {
   height: 88px;
   border-top: 1px solid var(--border);
-  @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
+  #spacer {
     height: 48px;
+  }
+}
+
+#mascotas {
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.section-header p {
+  margin: 0;
+  color: var(--text-muted, #555);
+}
+
+.mascotas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.mascota-card {
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--border, #ddd);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow, 0 10px 30px rgba(0, 0, 0, 0.08));
+}
+
+.mascota-card__header {
+  margin-bottom: 16px;
+}
+
+.mascota-card__nombre {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+.mascota-card__meta {
+  margin: 0;
+  color: var(--text-muted, #666);
+  font-size: 0.95rem;
+}
+
+.mascota-card__title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mascota-card__especie {
+  display: inline-flex;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.especie--perro {
+  color: #873800;
+  background: #ffe8d1;
+}
+
+.especie--gato {
+  color: #1b4f67;
+  background: #d8eff7;
+}
+
+.especie--otro {
+  color: #3d3d64;
+  background: #e6e6ff;
+}
+
+.mascota-card--perro {
+  border-color: #f9b384;
+  background: rgba(249, 179, 132, 0.12);
+}
+
+.mascota-card--gato {
+  border-color: #66c2d9;
+  background: rgba(102, 194, 217, 0.12);
+}
+
+.mascota-card--otro {
+  border-color: #8a8dd5;
+  background: rgba(138, 141, 213, 0.12);
+}
+
+.mascota-card__descripcion h3,
+.mascota-card__caracteristicas h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.mascota-card__descripcion p {
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+
+.mascota-card__caracteristicas ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0;
+}
+
+.mascota-card__caracteristicas li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 1024px) {
+  .mascotas-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .mascotas-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 .ticks {
   position: relative;
   width: 100%;
+}
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -4.5px;
-    border: 5px solid transparent;
-  }
+.ticks::before,
+.ticks::after {
+  content: '';
+  position: absolute;
+  top: -4.5px;
+  border: 5px solid transparent;
+}
 
-  &::before {
-    left: 0;
-    border-left-color: var(--border);
-  }
-  &::after {
-    right: 0;
-    border-right-color: var(--border);
-  }
+.ticks::before {
+  left: 0;
+  border-left-color: var(--border);
+}
+
+.ticks::after {
+  right: 0;
+  border-right-color: var(--border);
 }

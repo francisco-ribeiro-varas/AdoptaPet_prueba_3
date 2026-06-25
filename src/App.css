@@ -201,6 +201,13 @@
   width: 100%;
 }
 
+.urgent-count {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-h, #222);
+}
+
 .no-results {
   margin: 0 auto;
   max-width: 600px;
@@ -264,6 +271,14 @@
   flex-wrap: wrap;
 }
 
+.mascota-card__meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
 .mascota-card__especie {
   display: inline-flex;
   padding: 0.35rem 0.75rem;
@@ -287,6 +302,23 @@
 .especie--otro {
   color: #3d3d64;
   background: #e6e6ff;
+}
+
+.mascota-card--urgente {
+  border-color: #d93025;
+  background: rgba(255, 230, 230, 0.6);
+}
+
+.mascota-card__urgente-badge {
+  display: inline-flex;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: #d93025;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .mascota-card--perro {

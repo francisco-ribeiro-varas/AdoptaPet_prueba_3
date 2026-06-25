@@ -17,3 +17,8 @@ etapa 4:
 hay que filtrar con un selector para filtrar por la especies y en app.jsx se usa usstate para guardar el filtro seleccionado y un campo de busqueda por nombre y hay que aplicar ambos filtros sobre el array antes de pasarlo por ListaMascotas y si no se encuentra la mascota salga un mensaje no coinciden con ninguna mascota 
 fue util para agregar filtros
 utilidad: util
+
+etapa 5:
+hay que destarar algunas mascotas como adopcion urgente  o con un borde distinto a algunas mascotas y agregar un contador que muestre la cantidad de mascotas tienen adopcion urgente 
+fue util para agregar a algunas mascotas como adopcion urgente y agregar el filtro
+utilidad: util

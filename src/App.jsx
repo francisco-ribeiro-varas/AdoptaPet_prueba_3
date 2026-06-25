@@ -22,6 +22,8 @@ function App() {
     return speciesMatch && searchMatch
   })
 
+  const urgentCount = filteredMascotas.filter((mascota) => mascota.adopcionUrgente).length
+
   return (
     <>
       <div className="ticks"></div>
@@ -47,6 +49,10 @@ function App() {
               onChange={(event) => setSearchTerm(event.target.value)}
             />
           </label>
+        </div>
+
+        <div className="urgent-count">
+          <strong>{urgentCount}</strong> mascota{urgentCount === 1 ? '' : 's'} en adopción urgente
         </div>
 
         {filteredMascotas.length === 0 ? (
